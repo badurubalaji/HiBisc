@@ -11,6 +11,10 @@ login(){
   console.log(this.username);
   
 }
+forgot(){
+  console.log("forgot password");
+  
+}
   constructor() {
    
 

@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    color: black;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    overflow: hidden;
+}
