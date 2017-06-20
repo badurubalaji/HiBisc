@@ -6,21 +6,24 @@
         
   </div>
   <div class="col l6 m6 s12 center-align  valign-wrapper  card" style="height:100%;vertical-align: baseline;">
-<div class="container card center ">
+<div class="container card center " style="margin-left: auto;margin-right: auto;">
   
     <div class="logo center-align" style="color:black">
 						<h2>		HiBil</h2>
 						</div>
     <div class="row center">
-      <div class="col s12 m8 offset-m2 l8 offset-l2 input-field ">
+      <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2 input-field ">
          <input type="text" [(ngModel)]="username" name="username" id="username"/>
          <label for="username">UserName</label>
       </div>
-      <div class="col s12 m8 offset-m2 l8 offset-l2 input-field">
+      <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2 input-field">
         <input type="password" [(ngModel)]="password" id="password"/>
         <label for="password">Password</label>
       </div>
-      <div class="col s12 m8 offset-m2 l8 offset-l2 input-field"> 
+      <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2"> 
+         <label [class.error]="error">{{error_value}}</label>
+      </div>
+      <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2 input-field"> 
          <button style="width:100%" (click)="login()" class="btn waves-effect waves-light blue">Login</button>
       </div>
       <div class="col s12 m8  l8 input-field"> 
