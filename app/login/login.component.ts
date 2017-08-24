@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, Params } from '@angular/router';
 
 @Component({
   selector: 'app',
@@ -25,12 +26,13 @@ if(this.password.length<1)
 this.error_value='';
   console.log(this.username);
   
+  this.router.navigate(['/home']);
 }
 forgot(){
   console.log("forgot password");
   
 }
-  constructor() {
+  constructor(private route: ActivatedRoute, private router: Router) {
    
 
    }
